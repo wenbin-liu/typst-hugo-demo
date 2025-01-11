@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title type="text">Hugo Theme MemE</title>
-    <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2025-01-11T22:03:13&#43;08:00</updated>
-    <id>https://example.com/</id>
-    <link rel="alternate" type="text/html" href="https://example.com/" />
-    <link rel="self" type="application/atom&#43;xml" href="https://example.com/atom.xml" />
-    
-    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
-    <generator uri="https://gohugo.io/" version="0.106.0">Hugo</generator>
-        <entry>
-            <title type="text">Types Template</title>
-            <link rel="alternate" type="text/html" href="https://example.com/posts/main/" />
-            <id>https://example.com/posts/main/</id>
-            <updated>2025-01-11T21:46:37&#43;08:00</updated>
-            <published>2025-01-11T00:00:00&#43;00:00</published>
-            <author>
-                    <uri>https://example.com/</uri>
-                    </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">&lt;!DOCTYPE HTML&gt; # This Section Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur.</summary>
-            
-                <content type="html">&lt;!DOCTYPE HTML&gt;
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo Theme MemE</title>
+        <link>https://example.com/</link>
+        <description>MemE is a powerful and highly customizable GoHugo theme for personal blogs.</description>
+        <generator>Hugo 0.106.0 https://gohugo.io/</generator>
+        
+            <language>en</language>
+        
+        
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Sat, 11 Jan 2025 22:17:05 &#43;0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss&#43;xml" href="https://example.com/rss.xml" />
+        
+        
+            <item>
+                <title>Types Template</title>
+                <link>https://example.com/posts/main/</link>
+                <guid isPermaLink="true">https://example.com/posts/main/</guid>
+                <pubDate>Sat, 11 Jan 2025 00:00:00 &#43;0000</pubDate>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;!DOCTYPE HTML&gt;
 &lt;html lang=&#34;&#34;&gt;
 
 &lt;head&gt;
@@ -142,40 +152,41 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 &lt;/body&gt;
 
 &lt;/html&gt;
-</content>
-            
-            
-            
-            
-            
+</description>
+                
+                
+                
+                
                 
                     
                         
                             
+                                
+                                
+                                
+                                    <category domain="https://example.com/categories/computers/">Computers</category>
+                                
                             
+                        
+                    
+                        
                             
-                                <category scheme="https://example.com/categories/computers/" term="Computers" label="Computers" />
+                                
+                                
+                                
+                                    <category domain="https://example.com/tags/typst/">Typst</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://example.com/tags/rust/">Rust</category>
+                                
                             
                         
                     
                 
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://example.com/tags/typst/" term="Typst" label="Typst" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://example.com/tags/rust/" term="Rust" label="Rust" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-</feed>
+            </item>
+        
+    </channel>
+</rss>
