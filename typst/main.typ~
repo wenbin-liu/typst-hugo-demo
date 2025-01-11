@@ -1,0 +1,11 @@
+#import "template/hugo_template.typ": project
+#show: project.with(
+    title: [Types Template],
+    date: datetime.today(),
+    tags:("Typst","Rust"),
+    categories:("Computers",)
+)
+
+#import "@preview/nonsense:0.1.0": nonsense;
+
+#nonsense[hereisanexamplestring]
