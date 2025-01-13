@@ -1,6 +1,6 @@
 #import "template/hugo_template.typ": project
 #show: project.with(
-    title: [Types Template],
+    title: [Typst Template],
     date: datetime.today(),
     tags:("Typst","Rust"),
     categories:("Computers",)
