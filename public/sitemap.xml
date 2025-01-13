@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/categories/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/categories/computers/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/posts/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/rust/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/tags/typst/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url><url>
     <loc>https://example.com/posts/main/</loc>
-    <lastmod>2025-01-13T22:12:36+08:00</lastmod>
+    <lastmod>2025-01-13T22:14:32+08:00</lastmod>
   </url>
 </urlset>
