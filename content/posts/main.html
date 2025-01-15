@@ -1,4 +1,4 @@
-{"categories":["Computers"],"date":"2025-01-13","summary":"#\nThis Section\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.\n𝑓(𝑥,𝑦)≔{{{{{{{1if𝑥⋅𝑦2≤02if𝑥is even3if𝑥∈ℕ4else\n\nLorem ipsum dolor sit amet,","tags":["Typst","Rust"],"title":"Typst Template"}<!DOCTYPE HTML>
+{"categories":["Computers"],"date":"2025-01-15","summary":"#\nThis Section\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre in voluptatem, ut.\n𝑓(𝑥,𝑦)≔{{{{{{{1if𝑥⋅𝑦2≤02if𝑥is even3if𝑥∈ℕ4else\n\nLorem ipsum dolor sit amet,","tags":["Typst","Rust"],"title":"Typst Template"}<!DOCTYPE HTML>
 <html lang="">
 
 <head>
@@ -65,38 +65,38 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <script>
             var path_to_root = "/typst-ts/";
             window.typstPathToRoot = path_to_root;
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         </script>
-        <script>
-            let dom = document.documentElement  // The dom containing theme infomation
-            window.getTypstTheme = function getTypstTheme() {
-                var _theme;
-                _theme = dom.getAttribute("data-theme"); // Depends on the hugo theme used
-		if (_theme === undefined || _theme === null) {
-		    _theme = default_theme;
-		}
-                window.typstBookTheme = _theme;
-                return _theme;
+	    <script>
+    var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    let dom = document.documentElement  // The dom containing theme infomation
+    window.getTypstTheme = function getTypstTheme() {
+        var _theme;
+        _theme = dom.getAttribute("data-theme"); // Depends on the hugo theme used
+        if (_theme === undefined || _theme === null) {
+            _theme = default_theme;
+        }
+        window.typstBookTheme = _theme;
+        return _theme;
+    }
+    window.isTypstLightTheme = function isLightTheme(theme) {
+        return theme === 'light';
+    }
+    var theme = getTypstTheme();
+    // Create a MutationObserver instance
+    const observer = new MutationObserver((mutationsList) => {
+        for (const mutation of mutationsList) {
+            if (mutation.type === 'attributes') {
+                window.typstChangeTheme();
             }
-            window.isTypstLightTheme = function isLightTheme(theme) {
-                return theme === 'light';
-            }
-            var theme = getTypstTheme();
-            // Create a MutationObserver instance
-            const observer = new MutationObserver((mutationsList) => {
-                for (const mutation of mutationsList) {
-                    if (mutation.type === 'attributes') {
-                        window.typstChangeTheme();
-                    }
-                }
-            });
+        }
+    });
 
-            // Configure the observer to watch for attribute changes
-            observer.observe(dom, {
-                attributes: true, // Observe attribute changes
-                attributeFilter: ['data-theme'], // (Optional) Observe specific attributes, e.g., 'lang'
-            });
-        </script>
+    // Configure the observer to watch for attribute changes
+    observer.observe(dom, {
+        attributes: true, // Observe attribute changes
+        attributeFilter: ['data-theme'], // (Optional) Observe specific attributes, e.g., 'lang'
+    });
+</script>
         <!-- Set the theme before any content is loaded, prevents flash -->
         <div id="page-wrapper" class="page-wrapper">
             <div class="page">
@@ -115,6 +115,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
         <script src="/typst-ts/internal/svg_utils.js"></script>
     </div>
+    <div style="height:0; visibility: hidden; pointer-events: none;">
+        quaerat voluptatem. Ut enim aeque doleamus animo, cum corpore dolemus, fieri tamen permagna accessio 
+        potest, si aliquod aeternum et infinitum impendere malum nobis opinemur. Quod idem licet transferre 
+        in voluptatem, ut postea variari voluptas distinguique possit, augeri amplificarique non possit. 
+        At etiam Athenis, ut e patre audiebam facete et urban
+    </div><!-- issue https://github.com/wenbin-liu/typst-hugo/issues/1 -->
+  
 </body>
 
 </html>
